@@ -4,6 +4,11 @@
     <h1>My Cart</h1>
   </header>
 
+<% if @enhanced_cart == nil %>
+<div>Your cart is empty! Click the link below to go back to the Home page</div>
+<%# <% link_to 'Products', 'app/views/products/index.html.erb'%>  
+  <a href='/'>Return Home</a>
+<% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -30,7 +35,7 @@
         </tr>
       </tfoot>
     </table>
-  </div>
+  </div> 
 
   <div class="row">
     <div class="col-xs-12">
@@ -48,5 +53,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>
