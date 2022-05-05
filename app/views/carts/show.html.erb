@@ -6,8 +6,7 @@
 
 <% if @enhanced_cart == nil %>
 <div>Your cart is empty! Click the link below to go back to the Home page</div>
-<%# <% link_to 'Products', 'app/views/products/index.html.erb'%>  
-  <a href='/'>Return Home</a>
+<%= link_to 'Home', '/' %>
 <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
