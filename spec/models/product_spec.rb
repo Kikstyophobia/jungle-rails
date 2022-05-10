@@ -20,7 +20,6 @@ RSpec.describe Product, type: :model do
     end
   end
 
-
   describe 'name validation' do
     context 'name exists' do
       it 'returns true' do
